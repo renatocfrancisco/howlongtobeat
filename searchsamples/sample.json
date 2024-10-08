@@ -15,21 +15,29 @@
             "sortCategory": "popular",
             "rangeCategory": "main",
             "rangeTime": {
-                "min": 0,
-                "max": 0
+                "min": null,
+                "max": null
             },
             "gameplay": {
                 "perspective": "",
                 "flow": "",
                 "genre": ""
             },
+            "rangeYear": {
+                "min": "",
+                "max": ""
+            },
             "modifier": ""
         },
         "users": {
             "sortCategory": "postcount"
         },
+        "lists": {
+            "sortCategory": "follows"
+        },
         "filter": "",
         "sort": 0,
         "randomizer": 0
-    }
+    },
+    "useCache": true
 }

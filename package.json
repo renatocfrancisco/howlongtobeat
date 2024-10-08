@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/ckatzorke/howlongtobeat",
   "dependencies": {
-    "axios": "^1.6",
+    "axios": "^1.7.7",
     "cheerio": "^1.0.0-rc.12",
     "fast-levenshtein": "^2.0.6",
     "user-agents": "^1.0.580"
@@ -29,13 +29,13 @@
     "@types/chai": "^3.5.2",
     "@types/chai-as-promised": "^0.0.30",
     "@types/mocha": "^2.2.41",
-    "@types/node": "^7.0.14",
+    "@types/node": "^22.7.5",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
-    "codecov": "^3.7.1",
+    "codecov": "^3.8.3",
     "hoek": "^5.0.4",
-    "mocha": "^10.0.0",
-    "nyc": "^15.0.0",
-    "typescript": "^2.9.2"
+    "mocha": "^10.7.3",
+    "nyc": "^17.1.0",
+    "typescript": "^5.6.2"
   }
 }

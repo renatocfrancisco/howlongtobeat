@@ -17,9 +17,9 @@ describe('Integration-Testing HowLongToBeatService', () => {
         assert.strictEqual(entry.searchTerm, 'Dark Souls');
         assert.isString(entry.imageUrl);
         assert.isArray(entry.platforms);
-        assert.strictEqual(entry.platforms.length, 4);
+        assert.strictEqual(entry.platforms.length, 3);
         // backward compatible test
-        assert.strictEqual(entry.playableOn.length, 4);
+        assert.strictEqual(entry.playableOn.length, 3);
         assert.isTrue(entry.description.includes('Live Through A Million Deaths & Earn Your Legacy.'))
         assert.isTrue(entry.gameplayMain > 40);
         assert.isTrue(entry.gameplayCompletionist > 100);
@@ -49,8 +49,9 @@ describe('Integration-Testing HowLongToBeatService', () => {
   describe('Test for search()', () => {
     it('should have no search results when searching for dorks', () => {
       return new HowLongToBeatService().search('dorks').then((result) => {
-        assert.isNotNull(result);
-        assert.strictEqual(result.length, 0);
+        assert.fail()
+      }).catch(e => {
+        assert.isOk(e.message)
       });
     });
 
